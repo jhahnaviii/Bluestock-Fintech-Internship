@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluestock - Create an account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .signup-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #5d3fd3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .google-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .google-icon {
+            width: 20px;
+            margin-right: 10px;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="bluestock-logo.png" alt="Bluestock" width="150">
+        </h1>
+        <h2>Create an account</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">By continuing, you agree to our terms of service.</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="robot" required>
+                <label for="robot">I'm not a robot</label>
+            </div>
+            <button type="submit" class="signup-btn">Sign up</button>
+        </form>
+        <p style="text-align: center;">or sign up with</p>
+        <button class="google-btn">
+            <img src="google-icon.png" alt="Google" class="google-icon">
+            Continue with Google
+        </button>
+        <p class="login-link">Already have an account? <a href="#">Sign in here</a></p>
+    </div>
+</body>
+</html>
